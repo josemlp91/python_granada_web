@@ -17,9 +17,3 @@ WORKDIR /project-root
 COPY . /project-root
 RUN pip install -r requirements.txt
 RUN npm --prefix $THEMEDIR install $THEMEDIR
-
-CMD pelican content
-
-COPY /compose/pelican/deploy.sh /deploy.sh
-
-ENTRYPOINT ["/deploy.sh"]
