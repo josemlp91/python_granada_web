@@ -43,6 +43,6 @@ MENUITEMS_NAVBAR = (("Docs", "/p/docs.html"), ("Info", "/p/info.html"))
 MENUITEMS_NAVBAR_FEATURED = (("Docs", "/p/docs.html", "is-link"), ("Info", "/p/info", "is-info"))
 NAVBAR_STYLE = "is-warning"
 
-
+SITEURL="https://josemlp91.github.io/python_granada_web/"
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
