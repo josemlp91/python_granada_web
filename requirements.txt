@@ -1,0 +1,11 @@
+pelican==4.6.0
+markdown==3.3.4
+beautifulsoup4==4.9.3
+webassets==2.0
+typogrify
+markdown-captions
+markdown-checklist
+python-gettext==4.0
+pelican-webassets==2.0.0
+libsass==0.20.1
+cssmin==0.2.0
