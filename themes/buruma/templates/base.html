@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG | default('es') }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% if article and article.author %}
+			<meta name="author" content="{{ article.author }}" />
+		{% elif page and page.author %}
+			<meta name="author" content="{{ page.author }}" />
+		{% else %}
+			<meta name="author" content="{{ AUTHOR }}" />
+		{% endif %}
+		{% if SITE_DESCRIPTION %}
+			<meta name="description" content="{{ SITE_DESCRIPTION }}">
+		{% endif %}
+		{% if TWITTER_USERNAME %}
+			<meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}" />
+		{% endif %}
+		<title>{% block title %}{{ SITENAME|striptags|e }}{% endblock title %}</title>
+		
+
+		{% assets filters="libsass,cssmin", output="css/style.min.css", "scss/style.scss" %}
+  			<link rel="stylesheet" href="{{SITEURL}}/{{ASSET_URL}}">
+		{% endassets %}
+		
+		
+		<script src="{{ main_siteurl }}/theme/js/menu.js"></script>
+		<!-- Pending to improve -->
+		{% if MATOMO %}
+			{{ MATOMO }}
+		{% endif %}
+	</head>
+	<body>
+		{% block navbar %}
+		<nav class="navbar {% if NAVBAR_STYLE %}{{ NAVBAR_STYLE }}{% else %}is-info{% endif %}" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					{% if THEME_LOGO is defined and THEME_LOGO is sameas false %}
+						<!-- Empty -->
+					{% elif THEME_LOGO is defined %}
+						<a class="navbar-item" href="{{ SITEURL }}">
+							<img src="{{ THEME_LOGO }}" width="112" height="28">
+						</a>
+					{% elif THEME_LOGO is not defined %}
+						<a class="navbar-item" href="{{ SITEURL }}">
+							<img src="{{ SITEURL }}/theme/images/buruma_logo.png" width="112" height="28">
+						</a>
+					{% endif %}
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div id="navbarMain" class="navbar-menu">
+					<div class="navbar-start">
+					{% for item, link in MENUITEMS_NAVBAR %}
+						<a class="navbar-item" href="{{ link }}">
+							{{ item }}
+						</a>
+					{% endfor %}
+					{% if CATS_NOT_DROPDOWN %}
+						<a class="navbar-item" href="/categories">
+							{% trans %}Categories{% endtrans%}
+						</a>
+					{% else %}
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link" href="/categories">
+								{% trans %}Categories{% endtrans %}
+							</a>
+							<div class="navbar-dropdown">
+								{% for cat in categories %}
+								<a class="navbar-item" href="/{{ cat[0].url }}">
+									{{ cat[0] }}
+								</a>
+								{% endfor %}
+							</div>
+						</div>
+					{% endif %}
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							{% for item, link, style in MENUITEMS_NAVBAR_FEATURED %}
+								<a class="button {{ style }}" href="{{ link }}">{{ item }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+			</nav>
+		{% endblock navbar %}
+		<section class="section">
+			<div class="container">
+				{% block content %}
+				{% endblock content %}
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container has-text-centered">
+				<div class="columns">
+					<div class="column">
+						{% if FOOTER %}
+							{{ FOOTER }}
+						{% else %}
+							<p>{% trans %}Website generated with{% endtrans %} <a href="https://getpelican.com">Pelican</a>. <a href="https://github.com/ivanhercaz/buruma">Buruma</a> {% trans %}theme by{% endtrans %} <a href="https://ivanhercaz.com">Ivanhercaz</a></p>
+						{% endif %}
+						<p><a href="https://bulma.io">
+							<img src="/theme/images/made_with_bulma.png" alt="Made with Bulma" width="128" height="24">
+						</a></p>
+					</div>
+					<div class="column">
+						{% if LICENSE %}
+							{{ LICENSE_NOTICE}}	
+						{% else %}
+							<p>{% trans %}All rights reserved ©{% endtrans %} {{ AUTHOR }}</p>
+						{% endif %}
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "buruma",
+  "version": "0.2.3",
+  "description": "a Pelican theme with Bulma (CSS Framework)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanhercaz/buruma.git"
+  },
+  "keywords": [
+    "bulma",
+    "css",
+    "scss",
+    "theme",
+    "python",
+    "flexbox"
+  ],
+  "author": "Iván Hernández Cazorla",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ivanhercaz/buruma/issues"
+  },
+  "homepage": "https://github.com/ivanhercaz/buruma",
+  "devDependencies": {
+    "bulma": "^0.8.0"
+  }
+}
