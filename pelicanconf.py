@@ -37,13 +37,15 @@ SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
+SITEURL="https://josemlp91.github.io/python_granada_web"
 
 # Theme config
 MENUITEMS_NAVBAR = (("Docs", "#"), ("Info", "#"))
 NAVBAR_STYLE = "is-warning"
-THEME_LOGO = "/theme/images/logo_grande.svg"
+
+THEME_LOGO = SITEURL + "/theme/images/logo_grande.svg"
 FOOTER= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, ipsum ac faucibus fermentum, lacus est posuere risus, ut varius odio tortor tincidunt est"
 
-SITEURL="https://josemlp91.github.io/python_granada_web/"
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
