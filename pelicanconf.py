@@ -40,12 +40,8 @@ DEFAULT_PAGINATION = False
 SITEURL="https://josemlp91.github.io/python_granada_web"
 
 # Theme config
-MENUITEMS_NAVBAR = (("Docs", "#"), ("Info", "#"))
+MENUITEMS_NAVBAR = (("Asociación", f"{SITEURL}/pages/about.html"),)
 NAVBAR_STYLE = "is-warning"
-
-THEME_LOGO = SITEURL + "/theme/images/logo_grande.svg"
+THEME_LOGO = f"{SITEURL}/theme/images/logo_grande.svg"
 FOOTER= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan, ipsum ac faucibus fermentum, lacus est posuere risus, ut varius odio tortor tincidunt est"
 
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
