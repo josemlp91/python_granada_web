@@ -9,8 +9,8 @@ PELICANOPTS=
 BASEDIR=$(pwd)
 INPUTDIR=$BASEDIR/content
 OUTPUTDIR=$BASEDIR/output
-CONFFILE=$BASEDIR/pelicanconf.py
-THEMEDIR=$BASEDIR/themes/buruma
+CONFFILE=$BASEDIR/${CONFFILE:-pelicanconf.py}
+THEMEDIR=$BASEDIR$PELICAN_THEME_FOLDER
 
 ###
 # Don't change stuff below here unless you are sure

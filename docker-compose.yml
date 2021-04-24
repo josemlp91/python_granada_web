@@ -6,4 +6,8 @@ services:
       dockerfile: compose/pelican/Dockerfile
     ports: 
       - "8000:8000"
-    
+    volumes:
+      - .:/project-root
+    environment: 
+      - PELICAN_THEME_FOLDER=/themes/buruma
+      - CONFFILE=pelicanconf.dev.py
