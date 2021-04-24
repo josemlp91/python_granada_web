@@ -5,14 +5,14 @@ $sea: hsl(192.5, 48%, 29.4%);
 $light-sea: rgb(168, 214, 214);
 $turquoise: hsl(159.3, 45.4%, 48.8%);
 $light-green: hsl(105, 56.1%, 67.8%);
-$soft-yellow: rgb(209, 253, 48);
+$soft-yellow: #53a8a3;
 $white-ter: hsl(0, 0%, 96%);
 
 $primary: $sea;
 $info: $dark-sea;
 $link: $light-sea;
 $success: $turquoise;
-$warning: $soft-yellow;
+$warning: $light-sea;
 
 
 @import "../../node_modules/bulma/bulma.sass";
@@ -22,6 +22,12 @@ h2 {
 		text-decoration: none !important;
 	}
 }
+
+
+.navbar-item img {
+	max-height: 2.75rem;
+}
+
 
 .message-body {
 	.subtitle {

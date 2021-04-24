@@ -39,11 +39,11 @@
 						<!-- Empty -->
 					{% elif THEME_LOGO is defined %}
 						<a class="navbar-item" href="{{ SITEURL }}">
-							<img src="{{ THEME_LOGO }}" width="112" height="28">
+							<img src="{{ THEME_LOGO }}">
 						</a>
 					{% elif THEME_LOGO is not defined %}
 						<a class="navbar-item" href="{{ SITEURL }}">
-							<img src="{{ SITEURL }}/theme/images/buruma_logo.png" width="112" height="28">
+							<img src="{{ SITEURL }}/theme/images/buruma_logo.png">
 						</a>
 					{% endif %}
 					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
@@ -105,9 +105,6 @@
 						{% else %}
 							<p>{% trans %}Website generated with{% endtrans %} <a href="https://getpelican.com">Pelican</a>. <a href="https://github.com/ivanhercaz/buruma">Buruma</a> {% trans %}theme by{% endtrans %} <a href="https://ivanhercaz.com">Ivanhercaz</a></p>
 						{% endif %}
-						<p><a href="https://bulma.io">
-							<img src="/theme/images/made_with_bulma.png" alt="Made with Bulma" width="128" height="24">
-						</a></p>
 					</div>
 					<div class="column">
 						{% if LICENSE %}
