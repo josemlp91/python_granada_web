@@ -3,7 +3,7 @@ Slug: about
 Date: 2021-04-24 18:20
 Modified: 2021-12-24 18:20
 Authors: Jose Miguel Lopez
-Summary: ¿Quién somos? ¿Qué hacemos?
+Summary: ¿Quiénes somos? ¿Qué hacemos?
 
 
 Python Granada es una asociación sin ánimo de lucro cuyos objetivos, son, entre otros, promover el uso del lenguaje de programación Python, dar soporte a quienes deseen aprenderlo y promover la programación como una competencia educativa básica.
