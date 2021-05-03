@@ -25,17 +25,17 @@
             </a>
         {% endfor %}
         {% if CATS_NOT_DROPDOWN %}
-            <a class="navbar-item" href="/categories">
-                {% trans %}Categories{% endtrans%}
+            <a class="navbar-item" href="{{ SITEURL }}/categories">
+                {% trans %}Categorias{% endtrans%}
             </a>
         {% else %}
             <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link" href="/categories">
-                    {% trans %}Categories{% endtrans %}
+                <a class="navbar-link" href="{{ SITEURL }}/categories">
+                    {% trans %}Categorias{% endtrans %}
                 </a>
                 <div class="navbar-dropdown">
                     {% for cat in categories %}
-                    <a class="navbar-item" href="/{{ cat[0].url }}">
+                    <a class="navbar-item" href="{{ SITEURL }}/{{ cat[0].url }}">
                         {{ cat[0] }}
                     </a>
                     {% endfor %}
