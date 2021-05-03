@@ -63,7 +63,7 @@ function shut_down(){
 function start_up(){
   
   echo "Installing node modules"
-  #npm --prefix $THEMEDIR install $THEMEDIR
+  npm --prefix $THEMEDIR install $THEMEDIR
 
   local port=$1
   echo "Starting up Pelican and HTTP server"
