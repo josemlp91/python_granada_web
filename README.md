@@ -41,15 +41,15 @@ Divido los directorios en tres **categorías**.
 1. **Infra**, su propósito es preparar el entorno, instalar las dependencias y otras magias.
 2. **UI / UX**, contiene el código para darle forma y color a la web, generalmente HTML, CSS.
 3. **Content**, contiene artículos y publicaciones en markdown.
-4. **Code**, contien script en python para hacer pequeñas magias con Pelican y Python.
+4. **Code**, contiene scripts en python para hacer pequeñas magias con Pelican y Python.
 
 Y tendríamos los siguientes directorios: 
 
-- .github: (infra) Aquí se definen las cosas referentes a la integración continua, (mejor no tocarlo mucho xD)
-- compose: (infra) Aquí se definen los manifiestos Docker, que preparan todo lo necesario para que funcione en tu localhost.
-- content: (content) Aquí se alojan los articulos y publicaciones en formato Markdown.
-- plugins: (code) Plugins de Pelican.
-- themes: (ui/ux) Código HTML y CSS que pone bonita la web.
+- **.github** (infra) Aquí se definen las cosas referentes a la integración continua, (mejor no tocarlo mucho xD)
+- **compose** (infra) Aquí se definen los manifiestos Docker, que preparan todo lo necesario para que funcione en tu localhost.
+- **content** (content) Aquí se alojan los articulos y publicaciones en formato Markdown.
+- **plugins** (code) Plugins de Pelican.
+- **themes** (ui/ux) Código HTML y CSS que pone bonita la web.
 
 
 #### Localhost
