@@ -1,7 +1,7 @@
 # Web Python Granada 
 
 
-## ¿Que es esto?
+## ¿Qué es esto?
 
 Este es el repositorio con el código fuente de la humilde web de la organización **« Python Granada »** 
 
@@ -10,7 +10,7 @@ El objetivo es que sea un punto de encuentro y un lugar donde compartir las últ
 Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear tu post, publicarlo en el blog para que toda la comunidad Python pueda verlo y  fardar cuando hables con tu cuñado. 
 
 
-## ¿Como puedo ayudar? 
+## ¿Cómo puedo ayudar? 
 
 Si te va la marcha y quieres ayudar con este proyecto, ya verás que es bastante fácil hacerlo.
 
