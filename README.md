@@ -32,7 +32,7 @@ En principio estamos usando [Bulma Framework](https://bulma.io/), pero siente se
 
 ## Al cacharreo
 
-La web es generada usando [Pelican](https://blog.getpelican.com/), que nos ahorra hacer trabajo aburrido, tener que usar copy/paste constantemente y otras muchas magias que poco a poco irás descubriendo.
+La web es generada usando [Pelican](https://blog.getpelican.com/), que nos ahorra hacer trabajo aburrido, tener que usar copy/paste constantemente y otras muchas magias divertidas con Python que poco a poco irás descubriendo.
 
 
 ### Estructura del proyecto
