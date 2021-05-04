@@ -1,7 +1,7 @@
-## Web Python Granada 
+# Web Python Granada 
 
 
-### ¿Que es esto?
+## ¿Que es esto?
 
 Este es el repositorio con el código fuente de la humilde web de la organización « Python Granada » 
 
@@ -10,30 +10,30 @@ El objetivo es que sea un punto de encuentro y un lugar donde compartir las últ
 Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear su post y publicarlo en el blog para que toda la comunidad Python pueda verlo y  fardar cuando hables con tu cuñado. 
 
 
-### ¿Como puedo ayudar? 
+## ¿Como puedo ayudar? 
 
 Si te va la marcha y quieres ayudar con este proyecto, ya verás que es bastante fácil hacerlo.
 Hemos estructurado el proyecto para separar dos roles diferentes.
 
-#### Creador de contenidos
+### Creador de contenidos
 
 Aquí no necesitas tener grandes conocimientos técnicos, solo necesitamos creatividad.
 Todos los contenidos se escriben usando Markdown y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación.
 
 
-#### Como web developer
+### Como web developer
 
 Si tienes conocimientos de maquetación web y un poco de gusto estético, puedes ayudar a mejorar aspectos de diseño o usabilidad de la web.
 
 En principio estamos usando [Bulma Framework](https://bulma.io/), pero siente se puede cambiar a algo más avanzado si merece la pena.
 
 
-### Al cacharreo
+## Al cacharreo
 
 La web es generada usando [Pelican](https://blog.getpelican.com/), que nos ahorra hacer trabajo aburrido, tener que usar copy/paste constantemente y otras muchas magias que poco a poco irás descubriendo.
 
 
-#### Estructura del proyecto
+### Estructura del proyecto
 
 El proyecto queda estructurado en los siguientes directorios:
 Divido los directorios en tres **categorías**.
@@ -52,7 +52,7 @@ Y tendríamos los siguientes directorios:
 - **themes** (ui/ux) Código HTML y CSS que pone bonita la web.
 
 
-#### Localhost
+### Localhost
 
 Para arrancar este proyecto en local, independientemente del sistema operativo que uses, necesitas instalar [Docker](https://www.docker.com/get-started) y [docker-compose](https://docs.docker.com/compose/install/).
 
@@ -66,7 +66,7 @@ make up
 Accede con tu navegador a la url [localhost:8000](http://localhost:8000)
 
 
-#### Tengo algo bueno, vamos a publicar.
+## Tengo algo bueno, vamos a publicar.
 
 Aquí nos gusta mucho el software libre, por tanto todas las contribuciones se gestionan vía Github y usando **Pull Request**.
 
