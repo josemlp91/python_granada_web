@@ -7,7 +7,7 @@ Este es el repositorio con el código fuente de la humilde web de la organizaci�
 
 El objetivo es que sea un punto de encuentro y un lugar donde compartir las últimas novedades, eventos de interés que se organizan y todos la cosas de la comunidad Python que te puedan interesar para que no te pierdas nada.
 
-Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear su post y publicarlo en el blog para que toda la comunidad Python pueda verlo y  fardar cuando hables con tu cuñado. 
+Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear tu post, publicarlo en el blog para que toda la comunidad Python pueda verlo y  fardar cuando hables con tu cuñado. 
 
 
 ## ¿Como puedo ayudar? 
