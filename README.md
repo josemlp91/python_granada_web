@@ -76,6 +76,6 @@ Accede con tu navegador a la url [localhost:8000](http://localhost:8000)
 
 ## Tengo algo bueno, vamos a publicar.
 
-Aquí nos gusta mucho el software libre, por tanto todas las contribuciones se gestionan vía Github y usando **Pull Request** una vez se accepte el PR se publica automáticamente mediante nuestro **GitHub Action** personalizado, [GitHub Pages Pelican Build Action
+Aquí nos gusta mucho el software libre, por tanto todas las contribuciones se gestionan vía [Github](https://github.com/) y usando **Pull Request** una vez se accepte el PR se publica automáticamente mediante nuestro **GitHub Action** personalizado, [GitHub Pages Pelican Build Action
 ](https://github.com/PythonGranada/gh-pages-pelican-action) (by fork [nelsonjchen](https://github.com/nelsonjchen/pelican-action-demo))
 
