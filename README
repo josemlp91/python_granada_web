@@ -45,11 +45,11 @@ Divido los directorios en tres **categorías**.
 
 Y tendríamos los siguientes directorios: 
 
-- **.github**: (infra) Aquí se definen las cosas referentes a la integración continua, (mejor no tocarlo mucho xD)
-- **compose**: (infra) Aquí se definen los manifiestos Docker, que preparan todo lo necesario para que funcione en tu localhost.
-- **content**: (content) Aquí se alojan los articulos y publicaciones en formato Markdown.
-- **plugins**: (code) Plugins de Pelican.
-- **themes**: (ui/ux) Código HTML y CSS que pone bonita la web.
+- **.github** (infra) Aquí se definen las cosas referentes a la integración continua, (mejor no tocarlo mucho xD)
+- **compose** (infra) Aquí se definen los manifiestos Docker, que preparan todo lo necesario para que funcione en tu localhost.
+- **content** (content) Aquí se alojan los articulos y publicaciones en formato Markdown.
+- **plugins** (code) Plugins de Pelican.
+- **themes** (ui/ux) Código HTML y CSS que pone bonita la web.
 
 
 #### Localhost
