@@ -13,15 +13,17 @@ Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear tu 
 ## ¿Como puedo ayudar? 
 
 Si te va la marcha y quieres ayudar con este proyecto, ya verás que es bastante fácil hacerlo.
+
 Hemos estructurado el proyecto para separar dos roles diferentes.
 
 ### Creador de contenidos
 
 Aquí no necesitas tener grandes conocimientos técnicos, solo necesitamos creatividad.
+
 Todos los contenidos se escriben usando Markdown y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación.
 
 
-### Como web developer
+### Web developer
 
 Si tienes conocimientos de maquetación web y un poco de gusto estético, puedes ayudar a mejorar aspectos de diseño o usabilidad de la web.
 
