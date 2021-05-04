@@ -25,7 +25,7 @@ Todos los contenidos se escriben usando [Markdown](https://markdown.es/) y no ti
 ### Web developer
 
 Si tienes conocimientos de maquetación web y un poco de gusto estético, puedes ayudar a mejorar aspectos de diseño o usabilidad de la web.
-En principio estamos usando [Bulma Framework](https://bulma.io/), pero siente se puede cambiar a algo más avanzado si merece la pena.
+En principio estamos usando [Bulma Framework](https://bulma.io/), pero siempre se puede cambiar a algo más avanzado si merece la pena.
 
 
 ## Al cacharreo
