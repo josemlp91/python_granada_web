@@ -1,5 +1,7 @@
 # Web Python Granada 
 
+![deploy workflow](https://github.com/josemlp91/python_granada_web/actions/workflows/deploy.yml/badge.svg)
+
 
 ## ¿Qué es esto?
 
