@@ -3,7 +3,7 @@
 
 ## ¿Que es esto?
 
-Este es el repositorio con el código fuente de la humilde web de la organización « Python Granada » 
+Este es el repositorio con el código fuente de la humilde web de la organización **« Python Granada »** 
 
 El objetivo es que sea un punto de encuentro y un lugar donde compartir las últimas novedades, eventos de interés que se organizan y todos la cosas de la comunidad Python que te puedan interesar para que no te pierdas nada.
 
@@ -16,11 +16,11 @@ Si te va la marcha y quieres ayudar con este proyecto, ya verás que es bastante
 
 Hemos estructurado el proyecto para separar dos roles diferentes.
 
-### Creador de contenidos
+### Creador de contenidos o editor
 
 Aquí no necesitas tener grandes conocimientos técnicos, solo necesitamos creatividad.
 
-Todos los contenidos se escriben usando Markdown y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación.
+Todos los contenidos se escriben usando [Markdown](https://markdown.es/) y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación.
 
 
 ### Web developer
@@ -64,7 +64,7 @@ docker-compose up --build
 ```
 
 
-En el archivo **Makefile** tienes los comandos más usados para gestionar el proyecto en local.
+En el archivo **Makefile** tienes los comandos más usados para gestionar el proyecto en local, ``make``. 
 
 
 ```sh
