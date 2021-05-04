@@ -52,11 +52,17 @@ Y tendríamos los siguientes directorios:
 - **content** (content) Aquí se alojan los articulos y publicaciones en formato Markdown.
 - **plugins** (code) Plugins de Pelican.
 - **themes** (ui/ux) Código HTML y CSS que pone bonita la web.
+- **output** (autogenerado) Aquí se guarda el código de la web compilado, se genera automáticamente, por lo tanto **no modifiques manualmente**.
 
 
 ### Localhost
 
 Para arrancar este proyecto en local, independientemente del sistema operativo que uses, necesitas instalar [Docker](https://www.docker.com/get-started) y [docker-compose](https://docs.docker.com/compose/install/).
+
+```sh
+docker-compose up --build
+```
+
 
 En el archivo **Makefile** tienes los comandos más usados para gestionar el proyecto en local.
 
