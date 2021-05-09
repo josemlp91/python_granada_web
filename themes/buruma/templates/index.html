@@ -1,15 +1,54 @@
 {% extends "base.html" %}
 
-{% block content %}
-	<div class="columns">
-		<div class="column">
-			<h1 class="title">Bienvenido a Python Granada</h1>
-			<h2 class="subtitle">La comunidad dedicada a Python en Granada y alrededores</h2>
+{% block navbar %}
+<section class="hero is-primary is-medium header-image">
+	<!-- Hero head: will stick at the top -->
+	<div class="hero-head">
+	  <nav class="navbar">
+		<div class="container">
+		  <div class="navbar-brand">
+			<a class="navbar-item">
+				<img src="{{ SITEURL }}/theme/images/logo_grande.svg" alt="Python Granada Logo">
+			</a>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"  data-target="navbarMenuHeroA">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			  </a>
+		  </div>
+		  <div id="navbarMenuHeroA" class="navbar-menu">
+			<div class="navbar-end">
+				<a class="navbar-item" href="{{ SITEURL }}/categories">
+					{% trans %}Categorias{% endtrans %}
+				</a>
+				{% for item, link in MENUITEMS_NAVBAR %}
+				<a class="navbar-item" href="{{ link }}">
+					{{ item }}
+				</a>
+				{% endfor %}
+			</div>
+		  </div>
 		</div>
-		<div class="column">
-			{{ ABOUT_EXTRACT }}
-		</div>
+	  </nav>
 	</div>
+  
+	<!-- Hero content: will be in the middle -->
+	<div class="hero-body">
+	  <div class="container has-text-centered">
+		<p class="title">
+			Bienvenido a Python Granada
+		</p>
+		<p class="subtitle">
+			La comunidad dedicada a Python en Granada y alrededores
+		</p>
+		<img src="{{ SITEURL }}/theme/images/logo_grande.svg" alt="Python Granada Logo" height="10">
+	  </div>
+	</div>	
+  </section>
+			
+{% endblock navbar %}
+
+{% block content %}
 	<div class="container">
 		<h4 class="title is-4">Últimas publicaciones</h4>
 		{% for article in (articles_page.object_list if articles_page else articles) %}
