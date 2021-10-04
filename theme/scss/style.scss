@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+// $dark-sea: rgba(2,0,36,1);
+// $sea: rgba(9,9,121,1);
+// $light-sea: rgba(0,212,255,1);
+// $turquoise: hsl(159.3, 45.4%, 48.8%);
+// $light-green: hsl(105, 56.1%, 67.8%);
+// $soft-yellow: #53a8a3;
+// $white-ter: hsl(0, 0%, 96%);
+
+// $primary: $sea;
+// $info: $light-sea;
+// $link: $light-sea;
+// $success: $turquoise;
+// $warning: $light-sea;
+
+
+@import "../../node_modules/bulma/bulma.sass";
+
+
+.hero-body {
+    .container{
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+.message-body {
+	.subtitle {
+		margin-top: 1.5rem !important;
+		margin-bottom: 0.5rem !important;
+	}
+
+	h1 {
+		@extend .subtitle, .is-2;
+	}
+
+	h2 {
+		@extend .subtitle, .is-3;
+	}
+
+	h3 {
+		@extend .subtitle, .is-4;
+	}
+
+	h4 {
+		@extend .subtitle, .is-5;
+	}
+
+	h5 {
+		@extend .subtitle, .is-6;
+		font-weight: bold;
+	}
+
+	h6 {
+		@extend .subtitle, .is-6;
+	}
+
+	p {
+		margin-top: 6px;
+	}
+
+	figure {
+		margin: 25px !important;
+	}
+
+	ol, ul {
+		margin-inline-start: 50px;
+		list-style-type: disc;
+
+		li {
+			margin-top: 6px;
+		}
+	}
+	
+	.table {
+		margin: 25px !important;
+		padding: 5px !important;
+	}
+
+	table {
+		@extend .table;
+	}
+	
+	.image {
+		@extend .has-text-centered;
+		background: $white-ter;
+		min-width: 214px;
+		margin: 0 auto !important;
+
+		figcaption {
+			color: $grey-darker; 
+			margin-left: 2px;
+			margin-right: 2px;
+			margin-bottom: 4px;
+			padding-bottom: 4px;
+		}
+
+		img {
+			display: inline-block;
+		}
+	}
+}
+
+.image-centered {
+	text-align: center;
+}
+

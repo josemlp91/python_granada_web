@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<meta name="author" content="José Miguel" />
+		
+		
+		
+		<title>README  - Python Granada
+</title>
+		
+  			<link rel="stylesheet" href="https://josemlp91.github.io/python_granada_web/theme/css/style.min.css?3e58e027">
+				
+		<script src="https://josemlp91.github.io/python_granada_web/theme/js/menu.js"></script>
+
+	</head>
+	<body>
+
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+            <a class="navbar-item" href="https://josemlp91.github.io/python_granada_web">
+                <img src="https://josemlp91.github.io/python_granada_web/theme/images/logo_grande.svg">
+            </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarMain" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="https://josemlp91.github.io/python_granada_web/pages/about.html">
+                Asociación
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="https://josemlp91.github.io/python_granada_web/categories">
+Categorias                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="https://josemlp91.github.io/python_granada_web/category/blog.html">
+                        Blog
+                    </a>
+                </div>
+            </div>
+    </div>
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+		<section class="section">
+			<div class="container">
+<article class="message is-info">
+	<div class="message-header">
+		<h2>README</h2>
+		<p><time itemprop="dateCreated" datetime="2010-12-03T10:20:00+01:00">Fri 03 December 2010</time></p>
+	</div>
+	<div class="message-body has-text-dark">
+		<h1>Web Python Granada</h1>
+<p><img alt="deploy workflow" src="https://github.com/josemlp91/python_granada_web/actions/workflows/deploy.yml/badge.svg"> <a href="https://www.python.org/"><img alt="made-with-python" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a> <a href="http://commonmark.org"><img alt="made-with-Markdown" src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg"></a> <a href="https://creativecommons.org/licenses/by-nd/4.0"><img alt="CC-0 license" src="https://img.shields.io/badge/License-CC--0-blue.svg"></a></p>
+<h2>¿Qué es esto?</h2>
+<p>Este es el repositorio con el código fuente de la humilde web de la organización <strong>« Python Granada »</strong> </p>
+<p>El objetivo es que sea un punto de encuentro y un lugar donde compartir las últimas novedades, eventos de interés que se organizan y todos la cosas de la comunidad Python que te puedan interesar para que no te pierdas nada.</p>
+<p>Además aquí todo el mundo tiene cabida y tienes tu propio hueco para crear tu post, publicarlo en el blog para que toda la comunidad Python pueda verlo y  fardar cuando hables con tu cuñado. </p>
+<h2>¿Cómo puedo ayudar?</h2>
+<p>Si te va la marcha y quieres ayudar con este proyecto, ya verás que es bastante fácil hacerlo.</p>
+<p>Hemos estructurado el proyecto para separar dos roles diferentes.</p>
+<h3>Creador de contenidos o editor</h3>
+<p>Aquí no necesitas tener grandes conocimientos técnicos, solo necesitamos creatividad.
+Todos los contenidos se escriben usando <a href="https://markdown.es/">Markdown</a> y no tienes que pelearte con HTML ni CSS, solo darle rienda suelta a tu imaginación. También puedes combinar contenido en Markdown con celdas de python a través de un <a href="https://jupyter.org/">Jupyter Notebook</a> de la manera descrita en la forma 3 de este <a href="https://github.com/danielfrg/pelican-jupyter">plugin</a> para pelican realizado por danielfrg.</p>
+<h3>Web developer</h3>
+<p>Si tienes conocimientos de maquetación web y un poco de gusto estético, puedes ayudar a mejorar aspectos de diseño o usabilidad de la web.
+En principio estamos usando <a href="https://bulma.io/">Bulma Framework</a>, pero siempre se puede cambiar a algo más avanzado si merece la pena.</p>
+<h2>Al cacharreo</h2>
+<p>La web es generada usando <a href="https://blog.getpelican.com/">Pelican</a>, que nos ahorra hacer trabajo aburrido, tener que usar copy/paste constantemente y otras muchas magias divertidas con Python que poco a poco irás descubriendo.</p>
+<h3>Estructura del proyecto</h3>
+<p>El proyecto queda estructurado en los siguientes directorios:
+Divido los directorios en tres <strong>categorías</strong>.</p>
+<ol>
+<li><strong>Infra</strong>, su propósito es preparar el entorno, instalar las dependencias y otras magias.</li>
+<li><strong>UI / UX</strong>, contiene el código para darle forma y color a la web, generalmente HTML, CSS.</li>
+<li><strong>Content</strong>, contiene artículos y publicaciones en markdown.</li>
+<li><strong>Code</strong>, contiene scripts en python para hacer pequeñas magias con Pelican y Python.</li>
+</ol>
+<p>Y tendríamos los siguientes directorios: </p>
+<ul>
+<li><strong>.github</strong> (infra) Aquí se definen las cosas referentes a la integración continua, (mejor no tocarlo mucho xD)</li>
+<li><strong>compose</strong> (infra) Aquí se definen los manifiestos Docker, que preparan todo lo necesario para que funcione en tu localhost.</li>
+<li><strong>content</strong> (content) Aquí se alojan los articulos y publicaciones en formato Markdown.</li>
+<li><strong>plugins</strong> (code) Plugins de Pelican.</li>
+<li><strong>themes</strong> (ui/ux) Código HTML y CSS que pone bonita la web.</li>
+<li><strong>output</strong> (autogenerado) Aquí se guarda el código de la web compilado, se genera automáticamente, por lo tanto <strong>no modifiques manualmente</strong>.</li>
+</ul>
+<h3>Localhost</h3>
+<p>Para arrancar este proyecto en local, independientemente del sistema operativo que uses, necesitas instalar <a href="https://www.docker.com/get-started">Docker</a> y <a href="https://docs.docker.com/compose/install/">docker-compose</a>.</p>
+<div class="highlight"><pre><span></span><code>docker-compose up --build
+</code></pre></div>
+
+<p>En el archivo <strong>Makefile</strong> tienes los comandos más usados para gestionar el proyecto en local, <code>make</code>. </p>
+<div class="highlight"><pre><span></span><code>make up
+</code></pre></div>
+
+<p>Accede con tu navegador a la url <a href="http://localhost:8000">localhost:8000</a></p>
+<h2>Tengo algo bueno, vamos a publicar.</h2>
+<p>Aquí nos gusta mucho el software libre, por tanto todas las contribuciones se gestionan vía <a href="https://github.com/">Github</a> y usando <strong>Pull Request</strong> una vez se accepte el PR se publica automáticamente mediante nuestro <strong>GitHub Action</strong> personalizado, <a href="https://github.com/PythonGranada/gh-pages-pelican-action">GitHub Pages Pelican Build Action
+</a> (by fork <a href="https://github.com/nelsonjchen/pelican-action-demo">nelsonjchen</a>)</p>
+	</div>
+</article>
+			</div>
+		</section>
+		
+<footer class="footer">
+    <div class="container has-text-centered">
+        <div class="columns">
+            <div class="column">
+                    Made with ❤️ with Python from Granada. Under construction 🚧
+            </div>
+            <div class="column">
+                    <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0">
+        </div>
+    </div>
+</footer>
+	</body>
+</html>
